@@ -7,9 +7,9 @@ The overall setup uses 4 services in AWS:
 1. Lambda - for running the code
 2. RDS PostgreSQL - to store the cleaned data into a fact table in a PostgreSQL environment
 3. S3 - to store the raw json data downloaded from Twitter
-4. Cloudwatch Events - to configure a daily trigger which will run the Lambda once per day at 3 PM. 
+4. Cloudwatch Events - to configure a daily trigger which will run the Lambda once per day at 4 PM (20:00GMT). 
 
-Associated pictures to show proof of everything configured will be attached.
+Associated pictures to show proof of everything configured will be attached. They show one particular execution of the code at 1:56PM. The logs, data entry, and file timestamps in the pictures should all match this to show that the program is working.
 
 Potential improvements:
 1. Currently the program appends data into the tables, but does not check to make sure the data point does not already exist. Would be very useful to prevent duplicate entries.
