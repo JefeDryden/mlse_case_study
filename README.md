@@ -20,4 +20,4 @@ Potential improvements:
 4. I considered separating the various categories of supplmental functions into separate files. I decided that due to the small size of the overall file, it would only make reading the function more difficult.
 
 The code itself uses the handler -> mlse_trending.handler
-To run the code on your local device, make sure to set up the appropriate local variables for the PostgreSQL server and Twitter API credentials. Also 
+To run the code on your local device, make sure to set up the appropriate local variables for the PostgreSQL server and Twitter API credentials. Also will have to adjust the handler function so that it runs locally.
